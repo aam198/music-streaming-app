@@ -40,6 +40,19 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+
+.toast{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/* React Audio Player  */
+
+audio{
+  width: 100%;
+}
+
+
+
 /* 
   React Auto Adds 
 */
