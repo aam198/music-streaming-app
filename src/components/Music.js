@@ -13,7 +13,7 @@ export default function Music({ musicList, index }){
                   <i className="bx bxl-mailchimp"></i>{" "}
                 </div>
                 <div className="ms-2 c-details">
-                  <h6 className="mb-0">{musicList.name}</h6>{" "}
+                  <h5 className="mb-0">{musicList.name}</h5>{" "}
                   <span>{moment(musicList.created_at).format("MMMM Do YYYY")}</span>
                 </div>
               </div>
