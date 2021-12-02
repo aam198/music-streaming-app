@@ -3,7 +3,8 @@ import Header from "./components/Header";
 import toast, { Toaster } from "react-hot-toast";
 import { MdOutlineClose } from "react-icons/md";
 
-
+import { useAuth0 } from "@auth0/auth0-react";
+import Loading from "./components/Loading";
 import './styles/App.css';
 
 const notify = () =>
@@ -27,6 +28,13 @@ const notify = () =>
   );
 
 function App() {
+  const { isLoading } = useAuth0();
+  
+    if(isLoading) {
+      return <Loading />;
+    }
+
+
   return (
     
    <div className="container mt-5 mb-3">
