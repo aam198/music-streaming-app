@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 
 export default function LoginButton() {
   const { loginWithRedirect } = useAuth0();
+
   return (
     <Button
       id="btnLogin"
@@ -10,7 +11,7 @@ export default function LoginButton() {
       onClick={() => loginWithRedirect()}
       variant="primary"
     >
-      Log In
+     Login
     </Button>
   );
 }

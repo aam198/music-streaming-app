@@ -27,7 +27,7 @@ const notify = () =>
     { id: "unique-notification", position: "bottom-center" }
   );
 
-function App() {
+export default function App() {
   const { isLoading } = useAuth0();
   
     if(isLoading) {
@@ -51,4 +51,3 @@ function App() {
   );
 }
 
-export default App;
