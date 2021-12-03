@@ -6,6 +6,7 @@ import { MdOutlineClose } from "react-icons/md";
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/Loading";
 import './styles/App.css';
+import { Helmet } from "react-helmet";
 
 const notify = () =>
   toast((t) => (
@@ -38,6 +39,13 @@ export default function App() {
   return (
     
    <div className="container mt-5 mb-3">
+     <Helmet>
+       <meta charSet="utf-8" />
+       <script
+              src="https://widget.Cloudinary.com/v2.0/global/all.js"
+              type="text/javascript"
+        ></script>
+      </Helmet>
      <div>
         <button onClick={notify}>Notify</button>
         <Toaster /> 
