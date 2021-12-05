@@ -10,14 +10,13 @@ import { Helmet } from "react-helmet";
 
 const notify = () =>
   toast((t) => (
-      <div
-        className="notificationWrapper">
+      <div className="notificationWrapper">
         <div className="iconWrapper">
         </div>
         <div className="contentWrapper">
           <h1>New version available</h1>
           <p>
-            An improved version of VESSEL is now available, refresh to update.
+            An improved version is now available, refresh to update.
           </p>
         </div>
         <div className="closeIcon" onClick={() => toast.dismiss(t.id)}>
@@ -47,7 +46,7 @@ export default function App() {
         ></script>
       </Helmet>
      <div>
-        <button onClick={notify}>Notify</button>
+        <button onClick={notify}>Update Available!</button>
         <Toaster /> 
       </div>
 

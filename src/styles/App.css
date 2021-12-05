@@ -130,7 +130,19 @@ h1, h2, h3, h4, h5,h6{
   font-size: 1.8rem;
 }
 
+.notificationWrapper{
+  display: flex;
+}
 
+.closeIcon{
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.closeIcon:hover{
+  transform: scale(1.2);
+}
 
 
 
